@@ -7,7 +7,9 @@ class MP3Importer
   end
 
   def files
-    data = Dir.entries(@path).select{|f| f.end_with?('mp3')}
-    data
+    Dir.entries(@path).select{|f| f.end_with?('mp3')}
+  end
+
+  def import
   end
 end
