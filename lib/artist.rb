@@ -22,7 +22,7 @@ class Artist
     @@all.find {|a| a.name == name
   end
 
-  def create(name)
+  def self.create(name)
     self.new(name)
   end
 
