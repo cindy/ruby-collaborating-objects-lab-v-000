@@ -6,4 +6,5 @@ class Song
 
   def new_by_filename(filename)
     filename.split('-')[0]
+  end
 end
