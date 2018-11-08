@@ -1,5 +1,6 @@
 class MP3Importer
 
   def initialize(path)
-  end  
+    @path = path
+  end
 end
