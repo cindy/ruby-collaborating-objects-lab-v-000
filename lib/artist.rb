@@ -18,12 +18,15 @@ class Artist
     @@all << self
   end
 
+  def find(name)
+    @@all.find {|a| a.name == name
+    end
+
   def self.find_or_create_by_name(name)
-    match = @@all.find {|a| a.name == name}
+    match = 
     unless match
       self.new(name)
     end
-    match
   end
 
 end
