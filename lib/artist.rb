@@ -19,8 +19,9 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    @@all.find {|a| a.name == name}
-    require 'pry'; binding.pry
+    match = @@all.find {|a| a.name == name}
+    unless match
+      self.new(name)
   end
 
 end
