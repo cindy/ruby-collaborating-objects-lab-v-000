@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    data = Pathname.new(@path).children
+    data = Dir.entries(@path)
     data
   end
 end
