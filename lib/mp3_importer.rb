@@ -7,6 +7,7 @@ class MP3Importer
   end
 
   def files
-    Pathname.new(@path).size
+    data = Pathname.new(@path).read
+    data
   end
 end
