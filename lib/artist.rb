@@ -22,6 +22,8 @@ class Artist
     match = @@all.find {|a| a.name == name}
     unless match
       self.new(name)
+    end
+    match
   end
 
 end
